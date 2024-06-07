@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,236 +9,331 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaquaries.css"/>
 </head>
+
 <body>
+    <!--Navigation Bar-->
     <nav id="desktop-nav">
         <div class="logo">Raina</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contacts</a></li>
             </ul>
         </div>
     </nav>
+
     <nav id="hamburger-nav">
-        <div class="logo">Jonathan</div>
+        <div class="logo">Raina</div>
         <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
         <span></span>
         <span></span>
         <span></span>
     </div>
+
     <div class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
     </div>
+    <!--End of Navigation Bar-->
+
    </div>
         </nav>
+        <!--Profile Section-->
         <section id="profile">
             <div class="section__pic-container">
-                <img src="./assets/coolMe3.png" alt="Raina profile picture">
+                <img src="foto_Raina.png" alt="Raina profile picture">
             </div>
             <div class="section__text">
                 <p class="section__text__p1">Hello, I'm</p>
                 <h1 class="title">Raina Mahirazhafira Roihan</h1>
-                <p class="section__text__p2">Information and Comunication Technology Students</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
-                    <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact Info</button>
-
+                <p class="section__text__p2">Information and Comunication Technology Student</p>
+                <div class="btn-container-row">
+                    <button class="btn btn-color-1" onclick="window.open('Resume - Raina Mahirazhafira Roihan .pdf')">View Resume</button>
+                    <button class="btn btn-color-2" onclick="location.href = './#contact'">Contact Info</button>
                 </div>
                 <div id="social-container">
-                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href = 'https://www.linkedin.com/in/jonathan-purba-a4645424b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsNlZWOlLRYCeduUsO79f8w%3D%3D'">
-                    <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href = 'https://github.com/SchoolBoyJoJo'">
-
+                    <img src="asset_Linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/rainamahira')">
+                    <img src="asset_Github.png" alt="My GitHub profile" class="icon" onclick="window.open('https://github.com/rainamahira')">
                 </div>
             </div>
         </section>
+        <!--End of Profile Section-->
+
+        <!--About Section-->
         <section id="about">
-            <p class="section__text__p1">Get To Know More</p>
+            <p class="section__text__p1">Get to Know More</p>
             <h1 class="title">About Me</h1>
             <div class="section-container">
                 <div class="section__pic-container">
-                    <img src="assets/coolMe-fotor-20230926135854.png" alt="Profile picture" class="about-pic">
+                    <img src="foto_Raina2.jpg" alt="Profile picture" class="about-pic2">
                 </div>
                 <div class="about-details-container">
                     <div class="about-containers">
-                        <div class="details-container">
-                            <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <div class="aboutme-container">
+                            <img src="asset_Experience.png" alt="experience icon" class="icon">
                             <h3>Experience</h3>
-                            <p>1+ years <br />Informatics Students</p>
+                            <p style="font-size: 14px;">Jun 2024 - Present<br/>Data Analyst Intern at Telkomsel</p>
+                            <p style="font-size: 14px;">Jul 2023 - Oct 2023<br/>Secretary at Induction Days 2023</p>
+                            <p style="font-size: 14px;">Sep 2022 - Oct 2022<br/>Delegate of INTERPOL at AYIMUN 2022 </p>
                         </div>
-                        <div class="details-container">
-                            <img src="./assets/education.png" alt="education icon" class="icon">
+                        <div class="aboutme-container">
+                            <img src="asset_Education.png" alt="education icon" class="icon">
                             <h3>Education</h3>
-                            <p>Undergraduate Students<br />Sepuluh Nopember Institute of Technology (ITS)</p>
+                            <p style="font-size: 14px;"> Undergraduate Information and Communication Technology Student <br/> at CCIT Facuty Engineering University of Indonesia (Sep 2022 - Present) <br/> and Asia e University Malaysia <br/> (Sep 2022 - Present)</p>
                         </div>
                     </div>
                     <div class="text-container">
-                        <p>As an aspiring informatics student with a deep-rooted passion for cybersecurity and full-stack development, I am committed to continually expanding my knowledge and skills in these dynamic fields. I possess a strong foundation in computer science and are eager to contribute my expertise to cutting-edge projects while embracing every opportunity for growth and learning.</p>
+                        <p>
+                            I am a highly driven and passionate second-year college student specializing in Data Analytics, equipped with hands-on experience in Python, R, SQL, and various data visualization tools. Proficient in data manipulation, cleaning, and interpretation, I thrive on uncovering insights that drive strategic business decisions. Additionally, I possess strong analytical skills and a keen eye for detail, enabling me to derive meaningful conclusions from complex datasets. </p>
                     </div>
                 </div>
             </div>
-            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+            <img src="asset_Arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'">
         </section>
-        <section id="experience">
-            <p class="section__text__p1">Explore My</p>
-            <h1 class="title">Experience</h1>
+        <!--End of About Section-->
+
+        <!--Skills Section-->
+        <section id="skills">
+            <p class="section__text__p1">Explore</p>
+            <h1 class="title">My Skills</h1>
             <div class="experience-details-container">
                 <div class="about-containers">
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">Cyber Security</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                                <div>
-                                    <h3>---</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                                <div>
-                                    <h3>---</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                                <div>
-                                    <h3>---</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                                <div>
-                                    <h3>---</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                                <div>
-                                    <h3>---</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
                     <div class="details-container">
                         <h2 class="experience-sub-title">Programming Language</h2>
                         <div class="article-container">
                             <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                                <div>
-                                    <h3>HTML</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                                <div>
-                                    <h3>CSS</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                                <div>
-                                    <h3>C</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
-                                <div>
-                                    <h3>C++</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <img src="asset_Checkmark.png" alt="Checkmark icon" class="icon">
                                 <div>
                                     <h3>Python</h3>
-                                    <p>Basic</p>
+                                    <p>Advanced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="asset_Checkmark.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>SQL</h3>
+                                    <p>Advanced</Address></p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="asset_Checkmark.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>C++</h3>
+                                    <p>Advanced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="asset_Checkmark.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>Advanced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="asset_Checkmark.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>Kotlin</h3>
+                                    <p>Advanced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="asset_Checkmark.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>PHP</h3>
+                                    <p>Advanced</p>
+                                </div>
+                            </article>
+                          </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Data Analyst</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="asset_Checkmark.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>Excel</h3>
+                                    <p>Advanced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="asset_Checkmark.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>Tableau</h3>
+                                    <p>Advanced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="asset_Checkmark.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>Looker</h3>
+                                    <p>Advanced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="asset_Checkmark.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>Hadoop</h3>
+                                    <p>Advanced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="asset_Checkmark.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>Database Management</h3>
+                                    <p>Advanced</p>
                                 </div>
                             </article>
                         </div>
                     </div>
                 </div>
             </div>
-            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+            <img src="asset_Arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
         </section>
+        <!--End of Skills Section-->
+
+        <!--Projects Section-->
         <section id="projects">
             <p class="section__text__p1">Browse My Recent</p>
             <h1 class="title">Projects</h1>
             <div class="experience-details-container">
                 <div class="about-containers">
-                <div class="details-container color-container">
+                <div class="project-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                        <img src="foto_Project1.jpg" alt="Project 1" class="project-img">
                     </div>
                     <h2 class="experience-sub-title project-title">Project One</h2>
+                    <h4 class="project-description">Information Technology</h4>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='//put your link projects, ex: your github repo link'">Example 1</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='//put your link projects, ex: your github repo link'">Example 2</button>
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Download PDF</button>
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Source Code</button>
                     </div>
                 </div>
-                <div class="details-container color-container">
+                <div class="project-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project 1" class="project-img">
+                        <img src="foto_Project2.jpeg" alt="Project 1" class="project-img">
                     </div>
                     <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <h4 class="project-description">Algorithm and Programming</h4>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='//put your link projects, ex: your github repo link'">Example 1</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='//put your link projects, ex: your github repo link'">Example 2</button>
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Download PDF</button>
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Source Code</button>
                     </div>
                 </div>
-                <div class="details-container color-container">
+                <div class="project-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Project 1" class="project-img">
+                        <img src="foto_Project3.jpeg" alt="Project 1" class="project-img">
                     </div>
                     <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <h4 class="project-description">Microsoft SQL Server</h4>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='//put your link projects, ex: your github repo link'">Example 1</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='//put your link projects, ex: your github repo link'">Example 2</button>
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Download PDF</button>
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Source Code</button>
                     </div>
                 </div>
+                <div class="project-container color-container">
+                    <div class="article-container">
+                        <img src="foto_Project1.jpg" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Four</h2>
+                    <h4 class="project-description">Analyzing Microsoft Excel</h4>
+                    <div class="btn-container">
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Download PDF</button>
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Source Code</button>
+                    </div>
+                </div>
+                <div class="project-container color-container">
+                    <div class="article-container">
+                        <img src="foto_Project2.jpeg" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Five</h2>
+                    <h4 class="project-description">Object Oriented Programming</h4>
+                    <div class="btn-container">
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Download PDF</button>
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Source Code</button>
+                    </div>
+                </div>
+                <div class="project-container color-container">
+                    <div class="article-container">
+                        <img src="foto_Project3.jpeg" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Six</h2>
+                    <h4 class="project-description">Electronic Circuit and Sensors</h4>
+                    <div class="btn-container">
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Download PDF</button>
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Source Code</button>
+                    </div>
+                </div>
+                <div class="project-container color-container">
+                    <div class="article-container">
+                        <img src="foto_Project1.jpg" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Seven</h2>
+                    <h4 class="project-description">Computer Network Design</h4>
+                    <div class="btn-container">
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Download PDF</button>
+                        <button class="btn btn-color-3 project-btn" onclick="window.open('//put your link projects, ex: your github repo link')">Source Code</button>
+                    </div>
+                </div>          
+                </div>           
+                <div class="btn-container-column">
+                    <button class="btn btn-color-4" onclick="window.open('https://drive.google.com/drive/folders/1-5jQdldRdvJyswmzh055_PZk-E5czUyj?usp=drive_link')">View All Projects</button>
                 </div>
             </div>
-            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+            <img src="asset_Arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
         </section>
+        <!--End of Project Section-->
+
+        <!--Contact Section-->
         <section id="contact">
-            <p class="section__text__p1"> Get In Touch</p>
+            <p class="section__text__p1">Get in Touch</p>
             <h1 class="title">Contact Me</h1>
             <div class="contact-info-upper-container">
                 <div class="contact-info-container">
-                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-                    <p><a href="mailto:jonathanprb060504@gmail.com"></a>jonathanprb060504@gmail.com</p>
+                    <img src="asset_Email.png" alt="Email icon" class="icon contact-icon email-icon">
+                    <p><a href="mailto:rainamahira@gmail.com" target="_blank">rainamahira@gmail.com</a></p>
                 </div>
                 <div class="contact-info-container">
-                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon linkedin-icon">
-                    <p><a href="https://www.linkedin.com/in/jonathan-purba-a4645424b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsNlZWOlLRYCeduUsO79f8w%3D%3D"></a>LinkedIn</p>
+                    <img src="asset_Linkedin.png" alt="LinkedIn icon" class="icon contact-icon linkedin-icon">
+                    <p><a href="https://www.linkedin.com/in/rainamahira" target="_blank">LinkedIn</a></p>
                 </div>
             </div>
         </section>
+                <!--End of Contact Section-->
+
+        <!--Footer-->
         <footer>
             <nav>
                 <div class="nav-links-container">
                     <ul class="nav-links">
                         <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contacts</a></li>
                     </ul>
                 </div>
             </nav>
-            <p>Copyright &#169; 2023 Jonathan Purba. All Rights Reserved.</p>
+            <p>Copyright &#169; 2024 Raina Mahirazhafira Roihan. All Rights Reserved.</p>
         </footer>
-  <script src="script.js"></script>  
+        <!--End of Footer-->
+
+    <script src="script.js"></script>  
+
+    <!--Navigation Bar Shadow Effect-->
+    <script>
+        window.addEventListener('scroll', function() {
+            var navDesktop = document.getElementById('desktop-nav');
+            var navHamburger = document.getElementById('hamburger-nav');
+            var scrolled = window.scrollY > 0;
+            navDesktop.classList.toggle('scrolled', scrolled);
+            navHamburger.classList.toggle('scrolled', scrolled);
+        });
+    </script>
+     <!--End of Navigation Bar Shadow Effect-->
+  
 </body>
 </html>

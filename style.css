@@ -1,3 +1,4 @@
+
 /* GENERAL */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
@@ -5,6 +6,31 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+/* Navigasi desktop */
+#desktop-nav {
+    position: sticky;
+    top: 0;
+    background-color: white; 
+    z-index: 1000; 
+    font-family: "Poppins", sans-serif; 
+    transition: box-shadow 1s, background-color 1s; 
+}
+
+/* Navigasi hamburger */
+#hamburger-nav {
+    position: sticky;
+    top: 0;
+    background-color: white; 
+    z-index: 1000; 
+    font-family: "Poppins", sans-serif; 
+    transition: box-shadow 1s, background-color 1s; 
+}
+
+/* Efek bayangan saat di-scroll */
+#desktop-nav.scrolled, #hamburger-nav.scrolled {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Atur warna dan ukuran shadow */
 }
 
 body {
@@ -147,7 +173,7 @@ a:hover {
 
 section{
     padding-top: 4vh;
-    height: 96vh;
+    height: 100vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -155,6 +181,11 @@ section{
 
 .section-container{
     display: flex;
+}
+
+.section-aboutme-container{
+    height: 5000px;
+    width: 200px;
 }
 
 /* PROFILE SECTIONS */
@@ -183,16 +214,17 @@ section{
 }
 
 .section__text__p1{
+    font-size: 1.4rem;
     text-align: center;
 }
 
 .section__text__p2{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
 .title{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -212,10 +244,22 @@ section{
 
 /* BUTTONS */
 
-.btn-container{
+.btn-container-row{
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
+    padding: 1px;
+}
+
+.btn-container-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1px;
 }
 
 .btn{
@@ -226,39 +270,62 @@ section{
     border-radius: 2rem;
 }
 
-.btn-color-1, .btn-color-2{
+.btn-color-1, .btn-color-2, .btn-color-3, .btn-color-4{
     border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.btn-color-1:hover, .btn-color-2:hover{
+.btn-color-1:hover, .btn-color-2:hover, .btn-color-3:hover .btn-color-4:hover{
     cursor: pointer;
 }
 
-.btn-color-1, .btn-color-2:hover{
+.btn-color-1{
+    background: white;
+}
+
+.btn-color-1:hover{
     background: rgb(53, 53, 53);
     color: white;
 }
 
-.btn-color-1:hover{
-    background: rgb(0, 0, 0);
-}
-
 .btn-color-2{
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-2:hover{
+    background: rgb(0,0,0);
+    color: white;
+}
+
+.btn-color-3{
     background: none;
+    color: black;
+    padding: 12px;
 }
 
-.btn-color-2-hover{
-    border: rgb(255, 255, 255) 0.1rem solid;
+.btn-color-3:hover{
+    background: rgb(53, 53, 53);
+    color: white;
 }
 
-.btn-container{
-    gap: 1rem;
+.btn-color-4{
+    width: 250px;
+    background: rgb(53, 53, 53);
+    color: white;
+    padding: 20px;
 }
+
+.btn-color-4:hover{
+    background: rgb(0,0,0);
+    color: white;
+}
+
 
 /* ABOUT SECTIONS */
 
 #about{
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .about-containers{
@@ -274,20 +341,27 @@ section{
 
 .about-containers, .about-details-container{
     display: flex;
+    justify-content: center    ;
 }
 
 .about-pic{
     border-radius: 2rem;
 }
 
+.about-pic2{
+    height: 280px;
+    width: 280px;
+    border-radius: 2rem;
+}
+
 .arrow{
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
+    top:20rem;
 }
 
 .details-container{
-    padding: 1.5rem;
+    padding: 1rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
@@ -296,8 +370,33 @@ section{
     text-align: center;
 }
 
+.aboutme-container{
+    padding: 1rem;
+    width: 270px; 
+    height: 195px; 
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 190px; 
+    height: 420px;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
 .section-container{
-    gap: 4rem;
+    gap: 4.5rem;
     height: 80%;
 }
 
@@ -307,10 +406,12 @@ section{
     margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* SKILLS SECTION */
 
-#experience{
+#skills{
     position: relative;
+    margin-bottom: 2rem;
+
 }
 
 .experience-sub-title{
@@ -331,7 +432,7 @@ section{
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 2rem;
     justify-content: space-around;
 }
 
@@ -342,14 +443,18 @@ article{
     gap: 0.5rem;
 }
 
+
 article .icon{
     cursor: default;
 }
+
 
 /* PROJECTS SECTIONS */
 
 #projects{
     position: relative;
+    margin-bottom: 40rem;
+
 }
 
 .color-container{
@@ -364,13 +469,22 @@ article .icon{
 }
 
 .project-title{
-    margin: 1rem;
+    font-size: 21px;
     color: black;
+    margin: 0.3rem;
+}
+
+.project-description{
+    color: black;
+    margin-bottom: 30px;
+    margin: 1rem;
 }
 
 .project-btn{
     color: black;
     border-color: rgb(163, 163, 163);
+    margin-top: 15px;
+    
 }
 
 /* CONTACT SECTIONS */
